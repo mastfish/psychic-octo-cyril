@@ -5,9 +5,8 @@ gem 'rails', '4.0.0.rc1'
 
 gem 'pg'
 
-
 gem 'devise',              github: 'plataformatec/devise',     branch: 'rails4'
-
+gem 'jquery-rails', "2.3.0"
 # for activeadmin
 gem 'responders',          github: 'plataformatec/responders'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
@@ -17,7 +16,11 @@ gem 'sass-rails', '4.0.0.rc1'
 gem 'coffee-rails'
 gem 'coffee-script-source', '~> 1.4.0' # ADD THIS LINE, 1.5.0 doesn't compile ActiveAdmin JavaScript files
 gem 'uglifier'
-gem 'jquery-rails'
+
+
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 # End activeadmin block
 
@@ -36,7 +39,7 @@ gem 'unicorn'
 group :development do
   gem 'annotate'
   gem 'bullet'
-  gem 'rack-mini-profiler'
+  # gem 'rack-mini-profiler'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
