@@ -1,7 +1,8 @@
-function TodoCtrl($scope) {
-  $scope.todos = [
-    {text:'learn angular', done:true},
-    {text:'build an angular app', done:false}];
+function TodoCtrl($scope, $http) {
+
+  $http.get('lists/data.json').success(function(data) {
+    $scope.todos = data;
+  });
 
   $scope.addTodo = function() {
     $scope.todos.push({text:$scope.todoText, done:false});
