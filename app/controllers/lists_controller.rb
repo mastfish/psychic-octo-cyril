@@ -1,8 +1,8 @@
 class ListsController < ApplicationController
   before_filter :authenticate_user!
 
-  def data
-    @list = current_user.lists.first
+  def show
+    @list = List.find params[:id]
     render :json => @list.data
   end
 

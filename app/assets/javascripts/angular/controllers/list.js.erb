@@ -1,8 +1,14 @@
-function TodoCtrl($scope, $http) {
+function TodoCtrl($scope, $resource) {
 
-  $http.get('lists/data.json').success(function(data) {
-    $scope.todos = data;
+  var List = $resource("/lists/:id", {}, {
+    query: {method:'GET', isArray:true}
   });
+
+  $scope.todos = List.query({id: 1});
+
+  // $http.get('lists/data.json').success(function(data) {
+  //   $scope.todos = data;
+  // });
 
   $scope.addTodo = function() {
     $scope.todos.push({text:$scope.todoText, done:false});
