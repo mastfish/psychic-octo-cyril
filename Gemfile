@@ -2,11 +2,14 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '~> 4.0.0.rc1'
-
 gem 'pg'
-
 gem 'devise', '3.0.0.rc'
 gem 'jquery-rails', "~> 2.3.0"
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem 'angular-rails'
+
 # for activeadmin
 gem 'responders', '1.0.0.rc'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
@@ -16,13 +19,6 @@ gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'coffee-rails'
 gem 'coffee-script-source', '~> 1.4.0' # ADD THIS LINE, 1.5.0 doesn't compile ActiveAdmin JavaScript files
 gem 'uglifier'
-gem 'angular-rails'
-
-
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
-
 # End activeadmin block
 
 # To use ActiveModel has_secure_password
