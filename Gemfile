@@ -1,21 +1,22 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'rails', '4.0.0.rc1'
+gem 'rails', '~> 4.0.0.rc1'
 
 gem 'pg'
 
 gem 'devise',              github: 'plataformatec/devise',     branch: 'rails4'
-gem 'jquery-rails', "2.3.0"
+gem 'jquery-rails', "~> 2.3.0"
 # for activeadmin
 gem 'responders',          github: 'plataformatec/responders'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack',            branch: 'rails-4'
 gem 'activeadmin',         github: 'akashkamboj/active_admin', branch: 'rails4'
-gem 'sass-rails', '4.0.0.rc1'
+gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'coffee-rails'
 gem 'coffee-script-source', '~> 1.4.0' # ADD THIS LINE, 1.5.0 doesn't compile ActiveAdmin JavaScript files
 gem 'uglifier'
+gem 'angular-rails'
 
 
 gem "therubyracer"

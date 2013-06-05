@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/ernie/ransack.git
-  revision: 0d4394d75528ab10a0e30a1d78eba29837726bf0
+  revision: 4078f4fd0ff8b48658e1b69fe8bce0c36933f19c
   branch: rails-4
   specs:
     ransack (0.7.3)
@@ -47,7 +47,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/responders.git
-  revision: 7580276bd2d06684bcbc2b46ef123a90b117beb7
+  revision: bd0da3727fdc0f559ac3fa4d2c34ac7f9d7abc86
   specs:
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
@@ -80,6 +80,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     addressable (2.3.4)
+    angular-rails (0.0.12)
+      coffee-script (~> 2.2.0)
+      rails
     annotate (2.5.0)
       rake
     arbre (1.0.1)
@@ -137,7 +140,7 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     highline (1.6.19)
-    hike (1.2.2)
+    hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.1)
       activesupport (>= 3.0.0)
@@ -165,7 +168,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     minitest (4.7.4)
-    multi_json (1.7.4)
+    multi_json (1.7.6)
     orm_adapter (0.4.0)
     parallel (0.6.5)
     pg (0.15.1)
@@ -240,7 +243,7 @@ GEM
     thread_safe (0.1.0)
       atomic
     tilt (1.4.1)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     twitter-bootstrap-rails (2.2.6)
@@ -264,6 +267,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  angular-rails
   annotate
   bcrypt-ruby (~> 3.0.0)
   better_errors
@@ -276,17 +280,17 @@ DEPENDENCIES
   devise!
   inherited_resources!
   jbuilder
-  jquery-rails (= 2.3.0)
+  jquery-rails (~> 2.3.0)
   less-rails
   letter_opener
   pg
   pry
   pry-rails
-  rails (= 4.0.0.rc1)
+  rails (~> 4.0.0.rc1)
   rails_best_practices
   ransack!
   responders!
-  sass-rails (= 4.0.0.rc1)
+  sass-rails (~> 4.0.0.rc1)
   therubyracer
   twitter-bootstrap-rails
   uglifier
