@@ -34,24 +34,6 @@ GIT
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
 
-GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: 6b5988d756d780903bf8c9ccb3e2b3b724ccebe8
-  branch: rails4
-  specs:
-    devise (2.2.4)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      warden (~> 1.2.1)
-
-GIT
-  remote: git://github.com/plataformatec/responders.git
-  revision: bd0da3727fdc0f559ac3fa4d2c34ac7f9d7abc86
-  specs:
-    responders (1.0.0.rc)
-      railties (>= 3.2, < 5)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,6 +110,11 @@ GEM
     colored (1.2)
     commonjs (0.2.6)
     debug_inspector (0.0.2)
+    devise (3.0.0.rc)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      warden (~> 1.2.1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -208,6 +195,8 @@ GEM
     raindrops (0.11.0)
     rake (10.0.4)
     ref (1.0.5)
+    responders (1.0.0.rc)
+      railties (>= 3.2, < 5)
     ruby-progressbar (1.1.0)
     ruby2ruby (2.0.5)
       ruby_parser (~> 3.1)
@@ -277,7 +266,7 @@ DEPENDENCIES
   cane
   coffee-rails
   coffee-script-source (~> 1.4.0)
-  devise!
+  devise (= 3.0.0.rc)
   inherited_resources!
   jbuilder
   jquery-rails (~> 2.3.0)
@@ -289,7 +278,7 @@ DEPENDENCIES
   rails (~> 4.0.0.rc1)
   rails_best_practices
   ransack!
-  responders!
+  responders (= 1.0.0.rc)
   sass-rails (~> 4.0.0.rc1)
   therubyracer
   twitter-bootstrap-rails

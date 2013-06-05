@@ -5,10 +5,10 @@ gem 'rails', '~> 4.0.0.rc1'
 
 gem 'pg'
 
-gem 'devise',              github: 'plataformatec/devise',     branch: 'rails4'
+gem 'devise', '3.0.0.rc'
 gem 'jquery-rails', "~> 2.3.0"
 # for activeadmin
-gem 'responders',          github: 'plataformatec/responders'
+gem 'responders', '1.0.0.rc'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack',            branch: 'rails-4'
 gem 'activeadmin',         github: 'akashkamboj/active_admin', branch: 'rails4'
