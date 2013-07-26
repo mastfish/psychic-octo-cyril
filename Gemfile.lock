@@ -1,67 +1,75 @@
 GIT
-  remote: git://github.com/akashkamboj/active_admin.git
-  revision: d9c593b13a6fadcf0eb8d5bcd14fc1a157954e93
+  remote: git://github.com/ernie/ransack.git
+  revision: 3299f3aeaf5ce0a264f194daa0bec86919dfad82
+  branch: rails-4
+  specs:
+    ransack (0.7.3)
+      actionpack (~> 4.0.0)
+      activerecord (~> 4.0.0)
+      polyamorous (~> 0.6.0)
+
+GIT
+  remote: git://github.com/gregbell/active_admin.git
+  revision: 54fb71c5415f7b1a7aa0cdde680ee882fa3b2d6f
   branch: rails4
   specs:
     activeadmin (0.6.0)
       arbre (>= 1.0.1)
       bourbon (>= 1.0.0)
-      devise (>= 1.1.2)
-      fastercsv
+      coffee-rails (>= 3.2.0)
+      devise (>= 3.0.0.rc)
       formtastic (>= 2.0.0)
       inherited_resources (>= 1.3.1)
-      jquery-rails (>= 1.0.0)
+      jquery-rails (>= 3.0.0)
+      jquery-ui-rails (>= 4.0.0)
       kaminari (>= 0.13.0)
-      rails (>= 3.1.0)
+      rails (>= 3.2.0)
       ransack (>= 0.7.0)
-      sass (>= 3.1.0)
-
-GIT
-  remote: git://github.com/ernie/ransack.git
-  revision: 4078f4fd0ff8b48658e1b69fe8bce0c36933f19c
-  branch: rails-4
-  specs:
-    ransack (0.7.3)
-      actionpack
-      activerecord
-      polyamorous (~> 0.6.0)
+      sass-rails (>= 3.2.0)
 
 GIT
   remote: git://github.com/josevalim/inherited_resources.git
-  revision: 2c57b0566e6eee75e84e3fb7d6ab45a812b493c1
+  revision: 6d451d4bb2026b6c1920ba15838adb4d4b2aa3a4
   specs:
-    inherited_resources (1.4.0)
+    inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
+
+GIT
+  remote: git://github.com/justinfrench/formtastic.git
+  revision: cd6cb88f28ea7444267802ced8e5ec0f5cfd0f90
+  specs:
+    formtastic (2.3.0.rc2)
+      actionpack (>= 3.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.0.rc2)
-      actionpack (= 4.0.0.rc2)
+    actionmailer (4.0.0)
+      actionpack (= 4.0.0)
       mail (~> 2.5.3)
-    actionpack (4.0.0.rc2)
-      activesupport (= 4.0.0.rc2)
+    actionpack (4.0.0)
+      activesupport (= 4.0.0)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activemodel (4.0.0.rc2)
-      activesupport (= 4.0.0.rc2)
+    activemodel (4.0.0)
+      activesupport (= 4.0.0)
       builder (~> 3.1.0)
-    activerecord (4.0.0.rc2)
-      activemodel (= 4.0.0.rc2)
+    activerecord (4.0.0)
+      activemodel (= 4.0.0)
       activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.0.rc2)
+      activesupport (= 4.0.0)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.0.rc2)
+    activesupport (4.0.0)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    addressable (2.3.4)
+    addressable (2.3.5)
     angular-rails (0.0.12)
       coffee-script (~> 2.2.0)
       rails
@@ -70,9 +78,9 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.0)
-    atomic (1.1.9)
+    atomic (1.1.10)
     awesome_print (1.1.0)
-    bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.1.1)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -81,17 +89,6 @@ GEM
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
-    brakeman (2.0.0)
-      erubis (~> 2.6)
-      fastercsv (~> 1.5)
-      haml (>= 3.0, < 5.0)
-      highline (~> 1.6.19)
-      multi_json (~> 1.2)
-      ruby2ruby (~> 2.0.5)
-      ruby_parser (~> 3.1.1)
-      sass (~> 3.0)
-      slim (~> 1.3.6)
-      terminal-table (~> 1.4)
     builder (3.1.4)
     bullet (4.6.0)
       uniform_notifier
@@ -106,35 +103,32 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.4.0)
+    coffee-script-source (1.6.3)
     colored (1.2)
     commonjs (0.2.6)
     debug_inspector (0.0.2)
-    devise (3.0.0.rc)
+    devise (3.0.0)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
-      warden (~> 1.2.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    fastercsv (1.5.5)
-    formtastic (2.2.1)
-      actionpack (>= 3.0)
-    haml (4.0.3)
-      tilt
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
-    highline (1.6.19)
     hike (1.2.3)
     i18n (0.6.4)
     jbuilder (1.4.2)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
-    jquery-rails (2.3.0)
+    jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.0.4)
+      jquery-rails
+      railties (>= 3.1.0)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -146,7 +140,7 @@ GEM
     less-rails (2.3.3)
       actionpack (>= 3.1)
       less (~> 2.3.1)
-    letter_opener (1.1.1)
+    letter_opener (1.1.2)
       launchy (~> 2.2)
     libv8 (3.11.8.17)
     mail (2.5.4)
@@ -154,11 +148,11 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
-    minitest (4.7.4)
+    minitest (4.7.5)
     multi_json (1.7.7)
     orm_adapter (0.4.0)
-    parallel (0.7.0)
-    pg (0.15.1)
+    parallel (0.7.1)
+    pg (0.16.0)
     polyamorous (0.6.3)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -166,53 +160,47 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry-rails (0.3.1)
+    pry-rails (0.3.2)
       pry (>= 0.9.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.0.0.rc2)
-      actionmailer (= 4.0.0.rc2)
-      actionpack (= 4.0.0.rc2)
-      activerecord (= 4.0.0.rc2)
-      activesupport (= 4.0.0.rc2)
+    rails (4.0.0)
+      actionmailer (= 4.0.0)
+      actionpack (= 4.0.0)
+      activerecord (= 4.0.0)
+      activesupport (= 4.0.0)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.0.rc2)
+      railties (= 4.0.0)
       sprockets-rails (~> 2.0.0)
-    rails_best_practices (1.13.7)
+    rails_best_practices (1.14.0)
       activesupport
       awesome_print
       code_analyzer
       colored
       erubis
       i18n
+      require_all
       ruby-progressbar
-    railties (4.0.0.rc2)
-      actionpack (= 4.0.0.rc2)
-      activesupport (= 4.0.0.rc2)
+    railties (4.0.0)
+      actionpack (= 4.0.0)
+      activesupport (= 4.0.0)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.11.0)
-    rake (10.0.4)
+    rake (10.1.0)
     ref (1.0.5)
+    require_all (1.2.1)
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
     ruby-progressbar (1.1.1)
-    ruby2ruby (2.0.5)
-      ruby_parser (~> 3.1)
-      sexp_processor (~> 4.0)
-    ruby_parser (3.1.3)
-      sexp_processor (~> 4.1)
     sass (3.2.9)
-    sass-rails (4.0.0.rc2)
+    sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
     sexp_processor (4.2.1)
-    slim (1.3.9)
-      temple (~> 0.6.3)
-      tilt (~> 1.3, >= 1.3.3)
-    slop (3.4.5)
+    slop (3.4.6)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -222,13 +210,11 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    temple (0.6.5)
-    terminal-table (1.4.5)
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
     thor (0.18.1)
-    thread_safe (0.1.0)
+    thread_safe (0.1.2)
       atomic
     tilt (1.4.1)
     treetop (1.4.14)
@@ -240,15 +226,12 @@ GEM
       rails (>= 3.1)
       railties (>= 3.1)
     tzinfo (0.3.37)
-    uglifier (2.1.1)
-      execjs (>= 0.3.0)
-      multi_json (~> 1.0, >= 1.0.2)
-    unicorn (4.6.2)
+    unicorn (4.6.3)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
     uniform_notifier (1.2.0)
-    warden (1.2.1)
+    warden (1.2.3)
       rack (>= 1.0)
 
 PLATFORMS
@@ -258,29 +241,24 @@ DEPENDENCIES
   activeadmin!
   angular-rails
   annotate
-  bcrypt-ruby (~> 3.0.0)
+  bcrypt-ruby
   better_errors
   binding_of_caller
-  brakeman
   bullet
   cane
-  coffee-rails
-  coffee-script-source (~> 1.4.0)
-  devise (= 3.0.0.rc)
+  devise
+  formtastic!
   inherited_resources!
   jbuilder
-  jquery-rails (~> 2.3.0)
+  jquery-rails
   less-rails
   letter_opener
   pg
   pry
   pry-rails
-  rails (~> 4.0.0.rc2)
+  rails (~> 4.0.0)
   rails_best_practices
   ransack!
-  responders (= 1.0.0.rc)
-  sass-rails (~> 4.0.0.rc2)
   therubyracer
   twitter-bootstrap-rails
-  uglifier
   unicorn
