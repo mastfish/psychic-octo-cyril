@@ -40,6 +40,7 @@
       <div class="navbar-inner">
         <div class="container-fluid">
           <a class="brand" href="#">Sharehous.in</a>
+          Welcome <%= current_user.email %>, of house <%= current_user.house.name %>
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
+              <li><%= link_to "New list", new_list_path  %></li>
               <li><%= link_to "Link2", "/path2"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>

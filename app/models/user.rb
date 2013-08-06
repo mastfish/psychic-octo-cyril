@@ -28,4 +28,11 @@ class User < ActiveRecord::Base
   belongs_to :house
   has_many :lists, :through => :house
 
+  def after_create
+    if (!self.house)
+      self.house = House.create!
+      self.save!
+    end
+  end
+
 end
