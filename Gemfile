@@ -10,6 +10,7 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem 'angular-rails'
 gem "simple_form"
+gem 'rails_12factor'
 
 gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
 gem 'ransack',             github: 'ernie/ransack',         branch: 'rails-4'
