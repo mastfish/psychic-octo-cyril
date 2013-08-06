@@ -43,6 +43,7 @@
           <% if current_user%>
             Welcome <%= current_user.email %>, of house <%= current_user.house.name %>
           <% end %>
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
         </div>
       </div>
     </div>

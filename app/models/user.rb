@@ -28,7 +28,8 @@ class User < ActiveRecord::Base
   belongs_to :house
   has_many :lists, :through => :house
 
-  def after_create
+  after_create :bind_house
+  def bind_house
     if (!self.house)
       self.house = House.create!
       self.save!
