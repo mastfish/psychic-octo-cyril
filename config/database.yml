@@ -16,9 +16,15 @@ test:
   encoding: utf8
   database: sharehaus_test
   pool: 5
+  host: localhost
+  username: sharehaus
+  password: 'asdfas2543dfufds374auiyas2673564743278dfk4582436afsd654gfaoasd'
 
 production:
   adapter: postgresql
   encoding: utf8
   database: sharehaus_production
   pool: 5
+  host: localhost
+  username: sharehaus
+  password: 'asdfas2543dfufds374auiyas2673564743278dfk4582436afsd654gfaoasd'
