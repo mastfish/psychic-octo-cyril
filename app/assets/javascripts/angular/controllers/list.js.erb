@@ -1,18 +1,20 @@
 function TodoCtrl($scope, $resource) {
 
-  var List = $resource("/lists/:id", {}, {
-    query: {method:'GET', isArray:true}
+  var List = $resource("/lists/:id/items", {id:'@id'}, {
   });
-
-  $scope.todos = List.query({id: 1});
-
-  // $http.get('lists/data.json').success(function(data) {
-  //   $scope.todos = data;
-  // });
+  var id = 1;
+  $scope.todos = List.query({id: id});
 
   $scope.addTodo = function() {
     $scope.todos.push({text:$scope.todoText, done:false});
+    var listdata = []
+    angular.forEach($scope.todos, function(todo) {
+      listdata.push(todo);
+    });
+    list = new List({items:listdata, id: id});
+    list.$save();
     $scope.todoText = '';
+
   };
 
   $scope.remaining = function() {
